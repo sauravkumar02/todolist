@@ -1,0 +1,31 @@
+.navbar {
+  padding-top: 20px !important ;
+  padding-bottom: 20px !important;
+  background-color: #202124;
+  color: white;
+
+}
+
+.navbar a {
+  color: white;
+}
+.search-input {
+  width: 100%;
+  max-width: 700px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.collapse .navbar-text {
+  color: grey;
+  margin-right: 40px;
+}
+
+.collapse .navbar-text a {
+  color: white;
+}
+
+.hermburger-icon {
+  margin-left: 25px;
+  margin-right: 20px;
+}
+

@@ -1,0 +1,78 @@
+.todo-list-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.todo-list {
+  width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.textarea-container {
+  margin-top: 4px;
+}
+
+.todo-list input,
+.todo-list textarea {
+  width: 100% !important;
+  border: none;
+  outline: none;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
+}
+.icon-container .icons > * {
+  margin-left: 30px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: "pointer";
+}
+.icon-button span {
+  margin-left: 10px;
+  cursor: "pointer";
+}
+
+.card-icon-button {
+  background-color: "white";
+  border: none;
+}
+.todo-list-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .todo-list {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .icon-container .icons > * {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .icon-button span {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .todo-list-content {
+    width: 200px;
+  }
+}
