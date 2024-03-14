@@ -23,9 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3-+#be^9nw8u4c**8k!0v0gxdj2y_u6n6-h_z+27+dj&(@fv(g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost']
+ALLOWED_HOSTS =['*']
 
 
 # Application definition
@@ -86,6 +87,17 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'railway',
+#         'USER': 'postgres',
+#         'PASSWORD': 'IHurKdKxLvyJJVqyRsFrfMXyPYDBlQJU',
+#         'HOST': 'monorail.proxy.rlwy.net',
+#         'PORT': '34133',
+#     }
+# }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -137,7 +149,7 @@ REST_FRAMEWORK = {
 CORS_ALLOW_ALL_ORIGINS = True 
 
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000',
+    'http://localhost:3000',"https://todolist-nine-iota-43.vercel.app","http://todolist-nine-iota-43.vercel.app"
 ]
 CORS_ALLOW_METHODS = [
     'DELETE',
@@ -148,3 +160,7 @@ CORS_ALLOW_METHODS = [
     'PUT',
 ]
 APPEND_SLASH = False
+
+# import os
+# STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
